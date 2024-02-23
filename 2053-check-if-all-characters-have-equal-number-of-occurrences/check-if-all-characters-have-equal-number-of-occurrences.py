@@ -6,10 +6,7 @@ class Solution:
                 dick[x]=0
             dick[x]+=1
         
-        li=[x for x in dick.values()]
-        first=li[0]
-        for x in li[1:]:
-            if first!=x:
-                return False
+        
+        
             
-        return True
+        return len(set(dick.values()))==1
